@@ -23,4 +23,4 @@ def matchFilters(search: str, filters: []) -> str:
 
     return found_word
 
-matchFilters(SEARCH,FILTERS)
+ic(matchFilters(SEARCH,FILTERS))
