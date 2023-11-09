@@ -1,3 +1,4 @@
 tqdm==4.66.1
 sentence_transformers==2.2.2
 torch==2.1.0
+icecream==2.1.3

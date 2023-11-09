@@ -1,12 +1,10 @@
 from sentence_transformers import SentenceTransformer, util
 from icecream import ic
 import torch
-import time
 
 SEARCH = 'fulltime'
 FILTERS= ['Full-Time', 'Flexible', 'Remote', 'Part-Time','Processing products','License required','Consistent','part-time','where you are from']
 
-@time
 def matchFilters(search: str, filters: []) -> str:
     model = SentenceTransformer('all-mpnet-base-v2')
     embs_a = torch.zeros(1, 768)
